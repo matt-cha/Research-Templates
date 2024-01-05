@@ -28,27 +28,38 @@
             padding: 20px;
         }
 
-        .main-image {
+        .main {
+            max-width: 1200px;
             width: 100%;
+            margin: auto;
+        }
+
+        .main-image-div {
+            min-width: min-content;
             max-width: 1200px;
             height: 700px;
+            background-color: aqua;
+        }
+
+        .main-image {
+            width: 100%;
+            height: 100%;
             object-fit: contain; 
         }
 
         .hero-buttons {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
             margin: 20px 0;
-            border-radius: 5px;
+            width: 100%;
         }
 
         button {
-            padding: 10px;
-            flex: 1;
-            margin: 0 5px;
+            padding: 10px 30px;
             background-color: black;
             color: white;
             cursor: pointer;
+            border-radius: 3px;
         }
 
         .column-one-half {
@@ -87,19 +98,21 @@
         <h1>Car Brand Here</h1>
     </header>
 
-    <main>
-        <img class="main-image" src="https://cfsm-image-service.s3.amazonaws.com/resized-o10jpg" alt="Main Image">
+    <main class="main">
+        <div class="main-image-div">
+            <img class="main-image" src="https://cfsm-image-service.s3.amazonaws.com/resized-o10jpg" alt="Main Image">
+        </div>
 
         <div class="hero-buttons">
-            <button>Button 1</button>
-            <button>Button 2</button>
-            <button>Button 3</button>
-            <button>Button 4</button>
-            <button>Button 5</button>
+            <button>Link 1</button>
+            <button>Link 2</button>
+            <button>Link 3</button>
+            <button>Link 4</button>
+            <button>Link 5</button>
         </div>
 
         <div class="">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, voluptas atque non vitae tempora necessitatibus repellendus aliquid. Blanditiis doloribus molestias consectetur laudantium iusto quaerat adipisci sint, mollitia aliquam earum alias.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, totam officiis? Asperiores laborum harum porro sunt aperiam error. Nisi, cumque quam ipsam, accusamus veniam culpa suscipit sit asperiores velit iusto at explicabo officia tempore, cum hic. Blanditiis earum, vero consequatur, facere quod ipsa inventore expedita ex, assumenda debitis corrupti exercitationem voluptates adipisci facilis fugiat enim alias? Laboriosam neque quaerat autem et, dignissimos reiciendis deserunt cumque, officiis, fuga est eos corrupti. Accusamus est veniam ducimus, eum quaerat temporibus distinctio fuga rerum! Unde hic illo quasi eum consectetur delectus quaerat nostrum. Quidem, suscipit neque id fugiat sunt veritatis natus aliquid quae tempore exercitationem minima debitis? Quae animi rerum laudantium eum earum nobis accusantium ducimus, nam alias recusandae dicta laboriosam libero tempore ea porro qui? Est recusandae rerum molestias. Doloremque officiis libero unde odio nam iusto quidem quasi ratione rem? Rem perspiciatis esse ut id error quo praesentium sit velit. Aliquam quam unde totam, non architecto excepturi numquam nulla est dolorum magni, possimus eveniet eum labore provident sequi accusantium, error ipsam molestias similique eos recusandae! Laboriosam ex tempore perspiciatis minus totam omnis quod odit ut assumenda fugiat, quasi quia exercitationem, ad numquam autem animi labore nam adipisci distinctio! Fuga debitis ullam dolorum repellendus? Distinctio odit nostrum quo molestiae veritatis sed minus beatae tenetur, praesentium eum inventore aut ipsam ut! Blanditiis, recusandae nesciunt facere ab repellendus minima quibusdam, aliquid porro, aspernatur corrupti perferendis. Porro esse soluta consequuntur, voluptatem ut fugit similique sapiente fuga neque quos quis eaque velit quisquam quaerat illum provident rem? Pariatur?</p>
         </div>
 
         <div class="column-one-half">
