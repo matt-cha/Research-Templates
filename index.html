@@ -23,7 +23,6 @@
             flex-direction: row; 
             align-items: center; 
             justify-content: center; 
-            
         }
         
         header img {
@@ -59,11 +58,14 @@
 
         .hero-buttons {
             display: flex;
-            justify-content: space-evenly;
-            margin: 20px 0;
-            width: 100%;
+            margin: 20px ;
+            justify-content: space-around;
+            flex-wrap: wrap;
         }
 
+        a {
+            display: block; 
+        }
         button {
             padding: 10px 15px;
             background-color: black;
@@ -71,7 +73,6 @@
             cursor: pointer;
             border-radius: 3px;
             margin-bottom: 10px;
-           
         }
 
         .column-one-half {
@@ -99,10 +100,6 @@
                 height: 400px;
             }
 
-            button {
-                width: 100%;
-            }
-
             .column-one-half {
                 flex-direction: column;
             }
@@ -122,7 +119,7 @@
 <body>
     <header>
         <img src="https://1000logos.net/wp-content/uploads/2018/09/acura-emblem-black.jpg">
-        <h1>Car Brand Here</h1>
+        <h1>Car Brand</h1>
     </header>
 
     <main class="main">
@@ -131,12 +128,12 @@
         </div>
 
         <div class="hero-buttons">
-            <a href="https://www.example.com"><button>Link 1</button></a>
-            <a href="https://www.example.com"><button>Lorem ipsum</button></a>
-            <a href="https://www.example.com"><button>ipsum dolor sit</button></a>
-            <a href="https://www.example.com"><button>Link 4</button></a>
-            <a href="https://www.example.com"><button>Link 5</button></a>
-            <a href="https://www.example.com"><button>upsum dolor mina</button></a>
+                <a href="https://www.example.com"><button>Link 1</button></a>
+                <a href="https://www.example.com"><button>Lorem ipsum</button></a>
+                <a href="https://www.example.com"><button>ipsum dolor sit</button></a>
+                <a href="https://www.example.com"><button>Link 4</button></a>
+                <a href="https://www.example.com"><button>Link 5</button></a>
+                <a href="https://www.example.com"><button>upsum dolor mina</button></a>
         </div>
 
         <div class="">
