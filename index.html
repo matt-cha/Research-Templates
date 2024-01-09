@@ -14,11 +14,21 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            max-width: 100%; /* check this later */
+            max-width: 100%;
         }
 
         header {
             text-align: center;
+            display: flex;
+            flex-direction: row; 
+            align-items: center; 
+            justify-content: center; 
+            
+        }
+        
+        header img {
+            width: 100px; 
+            height: auto;
         }
 
         main {
@@ -41,7 +51,7 @@
             background-color: aqua;
         }
 
-        .main-image {
+        .image {
             width: 100%;
             height: 100%;
             object-fit: contain; 
@@ -55,11 +65,13 @@
         }
 
         button {
-            padding: 10px 30px;
+            padding: 10px 15px;
             background-color: black;
             color: white;
             cursor: pointer;
             border-radius: 3px;
+            margin-bottom: 10px;
+           
         }
 
         .column-one-half {
@@ -76,9 +88,11 @@
             flex-basis: calc(100% /2);
             padding-left: 5px;
         }
+
         @media screen and (max-width: 768px) {
             .hero-buttons {
                 flex-direction: column;
+                align-items: center;
             }
 
             .main-image-div {
@@ -87,7 +101,6 @@
 
             button {
                 width: 100%;
-                margin-bottom: 10px;
             }
 
             .column-one-half {
@@ -108,20 +121,22 @@
 </head>
 <body>
     <header>
+        <img src="https://1000logos.net/wp-content/uploads/2018/09/acura-emblem-black.jpg">
         <h1>Car Brand Here</h1>
     </header>
 
     <main class="main">
         <div class="main-image-div">
-            <img class="main-image" src="https://cfsm-image-service.s3.amazonaws.com/resized-o10jpg" alt="Main Image">
+            <img class="image" src="https://cfsm-image-service.s3.amazonaws.com/resized-o10jpg" alt="Main Image">
         </div>
 
         <div class="hero-buttons">
-            <button>Link 1</button>
-            <button>Link 2</button>
-            <button>Link 3</button>
-            <button>Link 4</button>
-            <button>Link 5</button>
+            <a href="https://www.example.com"><button>Link 1</button></a>
+            <a href="https://www.example.com"><button>Lorem ipsum</button></a>
+            <a href="https://www.example.com"><button>ipsum dolor sit</button></a>
+            <a href="https://www.example.com"><button>Link 4</button></a>
+            <a href="https://www.example.com"><button>Link 5</button></a>
+            <a href="https://www.example.com"><button>upsum dolor mina</button></a>
         </div>
 
         <div class="">
@@ -133,7 +148,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam dignissimos beatae maxime labore. Repellendus, adipisci! Aliquam dignissimos eveniet veniam dolore voluptatum ex sequi perferendis ipsam ipsa dolor, quisquam, accusamus natus nam enim! Magni, atque laudantium. Exercitationem, praesentium eligendi. Minus hic animi atque fugit nam natus laboriosam officiis, libero officia beatae voluptates consectetur, ut voluptatem mollitia, fugiat non totam corrupti doloremque magnam id. Quibusdam eum odio saepe, fuga omnis amet quas, alias, ut debitis voluptate aut doloremque fugit quaerat facere dolorum autem dolores est repellat! At sit veritatis porro distinctio obcaecati odit minima nesciunt! Nemo nesciunt incidunt, debitis dicta neque recusandae quas cupiditate optio corporis beatae porro? Velit totam atque eligendi doloribus ea sed ducimus in corrupti quas. Qui dolorem atque, aspernatur ipsa eum optio vitae dolores, porro quibusdam incidunt quos cupiditate tenetur commodi quas facere rerum sequi! Optio et ab vero, cum quis voluptatem culpa molestias nostrum exercitationem sit iusto nulla beatae nemo sint possimus in perferendis facere magnam aperiam rerum esse soluta. Quibusdam eum fuga ipsam eligendi expedita id officiis nam? Nihil, aliquam magnam blanditiis commodi voluptate atque porro autem minus hic facere officia soluta, eligendi assumenda ad labore! Eligendi corporis cumque laborum voluptatem ipsam et rerum repellendus assumenda?</p>
             </div>
             <div class="column-one-half-image">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, voluptatem itaque assumenda impedit autem excepturi blanditiis dolore ratione pariatur facilis esse maiores earum ipsa accusantium odit atque numquam corporis nisi ipsum vel delectus eveniet? Culpa, quaerat saepe temporibus magni at molestias voluptatem laborum adipisci harum dolorum illo, consequatur aliquam. Consectetur?</p>
+                <img class="image" src="https://vehicle-images.dealerinspire.com/c4a8-110006493/1C4PJXAN4RW124801/22a67e4c766d936bd630db7094cce76e.jpg" alt="">
             </div>
         </div>
         <div class="">
