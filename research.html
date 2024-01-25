@@ -7,6 +7,8 @@
     <style>
         * {
             box-sizing: border-box;
+            font-family: "Everett",sans-serif;
+            font-weight: normal;
         }
 
         body {
@@ -18,7 +20,7 @@
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -45,8 +47,16 @@
             flex-basis: calc(4/12*100%);
         }
 
+        .column-full-padding {
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
         .text-align-center {
             text-align: center;
+        }
+
+        .dealership-info {
+            border: 2px solid aquamarine
         }
 
         .display-flex {
@@ -59,40 +69,280 @@
             object-fit: contain; 
         }
 
+        .margin-right-1-rem {
+            margin-right: 1rem;
+        }
+
+        .margin-left-1-rem {
+            margin-left: 1rem;
+        }
+
+        .black-border {
+            border: 1px solid black;
+        }
+
+        .red-hover:hover img  {
+            border: 1px solid red;
+        }
+
+        .red-hover:hover h3, .red-hover:hover h4, .red-hover:hover p {
+            color: red;
+        }
+        
+        ul {
+            list-style: circle;
+        }
+
+        .justify-content-space-between {
+            justify-content: space-between;
+        }
+
+        .list-style-none {
+            list-style: none;
+        }
+
+        li > a:hover {
+            color: red;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        .column-padding {
+            padding: 0 1rem;
+        }
+
+        .margin-0 {
+            margin: 0;
+        }
+        
+        .margin-top-0 {
+            margin-top: 0;
+        }
         @media screen and (max-width: 768px) {
+            .column-eight-twelfth, .column-four-twelfth, .column-one-half {
+            flex-basis: 100%;
+        }
+
+            .column-full-padding {
+            padding-left: 0rem;
+            padding-right: 0rem;
+        }
+
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="row">
-            <div class="column-eight-twelfth">
+            <div class="column-full column-full-padding">
                 <div class="row">
                     <div class="column-full text-align-center">
-                        <h2 id="@title">Research Center</h2>
+                        <h3 id="@title">Research Center</h3>
                     </div>
                     <div class="column-full text-align-center">
                         <p id="@subtitle">Welcome to the Research Center at Maserati of Englewood Cliffs!</p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="column-full">
-                        <div class="">
-                            <div class="">
-                                <h5 id="@subtitle-one" class="title-text">Lorem, ipsum.</h5>
-                                <p id="@paragraph-one">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, totam officiis? Asperiores laborum harum porro sunt aperiam error. Nisi, cumque quam ipsam, accusamus veniam culpa suscipit sit asperiores velit iusto at explicabo officia tempore, cum hic. Blanditiis earum, vero consequatur, facere quod ipsa inventore expedita ex, assumenda debitis corrupti exercitationem voluptates adipisci facilis fugiat enim alias? Laboriosam neque quaerat autem et, dignissimos reiciendis deserunt cumque, officiis, fuga est eos corrupti. Accusamus est veniam ducimus, eum quaerat temporibus distinctio fuga rerum! Unde hic illo quasi eum consectetur delectus quaerat nostrum. Quidem, suscipit neque id fugiat sunt veritatis natus aliquid quae tempore exercitationem minima debitis? Quae animi rerum laudantium eum earum nobis accusantium ducimus, nam alias recusandae dicta laboriosam libero tempore ea porro qui? Est recusandae rerum molestias. Doloremque officiis libero unde odio nam iusto quidem quasi ratione rem? Rem perspiciatis esse ut id error quo praesentium sit velit. Aliquam quam unde totam, non architecto excepturi numquam nulla est dolorum magni, possimus eveniet eum labore provident sequi accusantium, error ipsam molestias similique eos recusandae! Laboriosam ex tempore perspiciatis minus totam omnis quod odit ut assumenda fugiat, quasi quia exercitationem, ad numquam autem animi labore nam adipisci distinctio! Fuga debitis ullam dolorum repellendus? Distinctio odit nostrum quo molestiae veritatis sed minus beatae tenetur, praesentium eum inventore aut ipsam ut! Blanditiis, recusandae nesciunt facere ab repellendus minima quibusdam, aliquid porro, aspernatur corrupti perferendis. Porro esse soluta consequuntur, voluptatem ut fugit similique sapiente fuga neque quos quis eaque velit quisquam quaerat illum provident rem? Pariatur?</p>
-                            </div>
-                            <div class="">
-                                <h2 id="@subtitle-three" class="">Lorem, ipsum.</h2>
-                                <p id="@paragraph-three" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam possimus quas nemo illum quo at doloremque? Error soluta iusto sapiente tempora adipisci earum dolores tenetur. Placeat officia voluptatum vitae similique et quasi temporibus voluptatem sequi dolores. Provident laudantium eius obcaecati sequi aperiam nihil! Libero magni, quo voluptate nemo minus cumque ea, debitis totam quis dolorum saepe architecto, commodi eum vel dicta nihil? Ipsam enim ratione maxime quaerat a laboriosam iusto magni, dicta totam nostrum reprehenderit fugit, dolorum nemo sint vero corrupti quos ut eum facilis eveniet! Consectetur magnam ipsum atque dolor? Excepturi fuga provident earum fugiat iure aliquid molestiae? Aliquam.</p>
-                            </div>
+                    <div class="column-one-half column-padding">
+                        <h3 class="text-align-center">Research Articles</h3>
+                        <h4>New Model Reviews</h4>
+                        <ul>
+                            <li>
+                                <a href="https://www.maseratiec.com/2024-maserati-granturismo-manhattan-ny/">2024 Maserati GranTurismo
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.maseratiec.com/2024-maserati-levante-manhattan-ny/">2024 Maserati Levante</a>
+                            </li>
+                        </ul>
+                        <h4>Additional Automotive Info</h4>
+                        <ul>
+                            <li>
+                                <a href="https://www.maseratiec.com/maserati-dealer-manhattan-ny/">Maserati Dealer Manhattan</a>
+                            </li>
+                            <li>
+                                <a href="https://www.maseratiec.com/maserati-dealer-serving-newark-nj/">Maserati Dealer Newark</a>
+                            </li>
+                            <li>
+                                <a href="https://www.maseratiec.com/maserati-dealer-short-hills-nj/">Maserati Dealer Short Hills</a>
+                            </li>
+                            <li>
+                                <a href="https://www.maseratiec.com/maserati-dealer-bronx-ny/">Maserati Dealer The Bronx</a>
+                            </li>
+                            <li>
+                                <a href="https://www.maseratiec.com/maserati-dealer-white-plains-ny/">Maserati Dealer White Plains</a>
+                            </li>
+                            <li>
+                                <a href="https://www.maseratiec.com/maserati-dealer-yonkers-ny/">Maserati Dealer Yonkers</a>
+                            </li>
+                            <li>
+                                <a href="https://www.maseratiec.com/what-is-a-certified-pre-owned-maserati/">What is a Certified Pre-Owned Maserati</a>
+                            </li>
+
+                        </ul>
+                        <h4>Trim Levels and Accessories</h4>
+                        <ul>
+                            <li>
+                                <a href="https://www.maseratiec.com/maserati-genuine-accessories-manhattan-ny/">Maserati Genuine Accessories Manhattan NY</a>
+                            </li>
+                            <li>
+                                <a href="https://www.maseratiec.com/trim-levels-of-the-2024-maserati-granturismo/">Trim Levels of the 2024 Maserati GranTurismo</a>
+                            </li>
+                        </ul>
+                        <h4>Buying & Ownership Tips</h4>
+                        <ul>
+                            <li>
+                                <a href="https://www.maseratiec.com/maserati-financing-manhattan-ny/">Maserati Financing Manhattan NY</a>
+                            </li>
+                            <li>
+                                <a href="https://www.maseratiec.com/maserati-service-manhattan-ny/">Maserati Service Manhattan NY</a>
+                            </li>
+                        </ul>
+                        <h4>Pre-Owned Model Reviews & Info</h4>
+                        <ul>
+                            <li>
+                                <a href="https://www.maseratiec.com/2023-maserati-ghibli-englewood-cliffs-nj/">2023 Maserati Ghibli</a>
+                            </li>
+                            <li>
+                                <a href="https://www.maseratiec.com/2023-maserati-grecale-englewood-cliffs-nj/">2023 Maserati Grecale</a>
+                            </li>
+                            <li>
+                                <a href="https://www.maseratiec.com/2023-maserati-grecale-vs-porsche-macan/">2023 Maserati Grecale VS 2023 Porsche Macan</a>
+                            </li>
+                            <li>
+                                <a href="https://www.maseratiec.com/2023-maserati-grecale-vs-porsche-cayenne/">2023 Maserati Grecale VS 2023 Porsche Cayenne</a>
+                            </li>
+                            <li>
+                                <a href="https://www.maseratiec.com/2023-maserati-levante-englewood-cliffs-nj/">2023 Maserati Levante</a>
+                            </li>
+                            <li>
+                                <a href="https://www.maseratiec.com/2023-maserati-mc20-manhattan-ny/">2023 Maserati MC20</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column-one-half column-padding">
+                        <h3 class="text-align-center">Hot Topics</h3>
+                        <div class="red-hover">
+                            <a href="https://www.maseratiec.com/2024-maserati-levante-manhattan-ny/">
+                                <h4 class="margin-0">2024 Maserati Levante</h4>
+                                <div>
+                                    <img class="image black-border" alt="car" src="https://cfsm-image-service.s3.amazonaws.com/resized-aseratimaseratiinternationalmodelpagelevantewelcomingILV23US4004desktopjpg1920x2000fitconstrain">
+                                </div>
+                                <p class="margin-top-0">The folks at Maserati Englewood Cliffs are excited to give you the lowdown on the 2024 Maserati Levante! It's ...(more)</p>
+                            </a>
                         </div>
+                        <div class="red-hover">
+                            <a href="https://www.maseratiec.com/2023-maserati-mc20-manhattan-ny/">
+                                <h4 class="margin-0">2023 Maserati MC20</h4>
+                                <div>
+                                    <img class="image black-border" alt="car" src="https://www.maserati.com/content/dam/maserati/international/Models/my23/mc20/hero/mc20_hero_desktop.jpg">
+                                </div>
+                                <p class="margin-top-0">The 2023 Maserati MC20 super sports car embodies a seamless blend of sporty dynamics and lavish luxury. Acting...(more)</p>
+                            </a>
+                        </div>
+                        <div class="red-hover">
+                            <a href="https://www.maseratiec.com/2024-maserati-granturismo-manhattan-ny/">
+                                <h4 class="margin-0">2024 Maserati GranTurismo</h4>
+                                <div>
+                                    <img class="image black-border" alt="car" src="https://maserati.scene7.com/is/image/maserati/maserati/international/Models/granturismo/granturismo-gt/gt-23/design/GT-Design.jpg?$1200x2000$&fit=constrain">
+                                </div>
+                                <p class="margin-top-0"> An icon has arrived. Any fan of Maserati knows that there is one iconic vehicle that has a long and storied hi...(more)</p>
+                            </a>
+                        </div>
+                        <div class="red-hover">
+                            <a href="https://www.maseratiec.com/2023-maserati-ghibli-englewood-cliffs-nj/">
+                                <h4 class="margin-0">2023 Maserati Ghibli</h4>
+                                <div>
+                                    <img class="image black-border" alt="car" src="https://maserati.scene7.com/is/image/maserati/maserati/international/model-page/ghibli/welcoming/IGH23US4_001-desktop.jpg?$1920x2000$&fit=constrain">
+                                </div>
+                                <p class="margin-top-0">The 2023 Maserati Ghibli offers fashion-forward Italian styling, powerful engines, and sporty moves. The luxur...(more)</p>
+                            </a>
+                        </div>
+
                     </div>
                 </div>
             </div>
-            <div class="column-four-twelfth">
-                <p>Lorem ipsum dolor sit.</p>
-            </div>
+            <!-- <div class="column-four-twelfth">
+                <div class="dealership-info">
+
+                    <div class="row">
+                        <div class="column-full ">
+                            <h3 class="margin-left-1-rem">Dealership Info</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column-full">
+                                <p  class="margin-left-1-rem">Phone Numbers:</p>
+                                <ul class="margin-right-1-rem">
+                                    <li class="justify-content-space-between display-flex list-style-none">
+                                        <span>Main:</span>
+                                        <span>
+                                                <a class="" href="example.com">551-303-6344</a>
+                                        </span>
+                                    </li>
+                                    <li class="justify-content-space-between display-flex list-style-none">
+                                        <span>Sales:</span>
+                                        <span>
+                                            <a href="example.com">551-303-6344</a>
+                                        </span>
+                                    </li>
+                                    <li class="justify-content-space-between display-flex list-style-none">
+                                        <span>Service:</span>
+                                        <span>
+                                            <a href="example.com">551-303-6344</a>
+                                        </span>
+                                    </li>
+                                    <li class="justify-content-space-between display-flex list-style-none">
+                                        <span>Parts:</span>
+                                        <span>
+                                            <a href="example.com">551-303-6344</a>
+                                        </span>
+                                    </li>
+                                </ul>
+                                <p  class="margin-left-1-rem">Sales Hours:</p>
+                                <ul class="margin-right-1-rem">
+                                    <li class="justify-content-space-between display-flex list-style-none">
+                                        <span>Mon - Thu</span>
+                                        <span>
+                                            9:00 AM - 7:00 PM
+                                        </span>
+                                    </li>
+                                    <li class="justify-content-space-between display-flex list-style-none">
+                                        <span>Fri</span>
+                                        <span>9:00 AM - 4:30 PM</span>
+                                    </li>
+                                    <li class="justify-content-space-between display-flex list-style-none">
+                                        <span>Sun</span>
+                                        <span>Closed</span>
+                                    </li>
+                                </ul>
+                                <p  class="margin-left-1-rem">Service Hours</p>
+                                <ul class="margin-right-1-rem">
+                                    <li class="justify-content-space-between display-flex list-style-none">
+                                        <span>Mon - Thu</span>
+                                        <span>
+                                            9:00 AM - 7:00 PM
+                                        </span>
+                                    </li>
+                                    <li class="justify-content-space-between display-flex list-style-none">
+                                        <span>Fri</span>
+                                        <span>9:00 AM - 4:30 PM</span>
+                                    </li>
+                                    <li class="justify-content-space-between display-flex list-style-none">
+                                        <span>Sun</span>
+                                        <span>Closed</span>
+                                    </li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+     
+
+            </div> -->
         </div>
     </div>
 </body>
